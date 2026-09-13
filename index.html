@@ -359,7 +359,7 @@ footer{padding:26px 0 40px}
 <section class="proj" id="projects">
   <div class="wrap">
     <h2 class="s-title ramp">Projects</h2>
-    <p class="s-lead">Three builds with one throughline — generated output anchored to something real and checkable.</p>
+    <p class="s-lead">Four builds with one throughline — generated output anchored to something real and checkable.</p>
 
     <div class="stack" id="stack">
       <div class="slot">
@@ -426,6 +426,37 @@ footer{padding:26px 0 40px}
           <div class="c-top">
             <div class="c-l">
               <div class="c-n ramp">03</div>
+              <div class="c-meta">
+                <span class="mono">GenAI · 2025</span>
+                <h3>GraphRAG — Hybrid Vector + Knowledge-Graph Search Engine</h3>
+              </div>
+            </div>
+            <a class="ghost" href="https://github.com/PriyanshuDhall?tab=repositories" target="_blank" rel="noopener">Live project</a>
+          </div>
+          <div class="c-body">
+            <ul>
+              <li>Built a <b>hybrid retrieval system</b> combining FAISS vector search with a NetworkX knowledge graph, answering multi-hop questions (e.g. "How is Nvidia connected to Anthropic?") that similarity-only vector search cannot resolve.</li>
+              <li>Designed a hybrid extraction pipeline that cross-validates <b>LLM-extracted relationship triples</b> against deterministic regex-derived ground truth, automatically correcting direction-reversed and duplicate relations with no manual review.</li>
+              <li>Engineered relevance-ranked graph-fact retrieval with a degree-capped subgraph visualization for readability on <b>70+ entity live graphs</b>; benchmarked at <b class="hi">97% retrieval accuracy</b> on 60 multi-hop questions vs. 30% for vector-search-only.</li>
+              <li>Shipped with a zero-cost mock mode, a live OpenAI mode, and a 20-test automated pytest suite with CI.</li>
+            </ul>
+            <div class="panel">
+              <div class="panel-h">Stack readout</div>
+              <div class="panel-r"><span>Language</span><b>Python</b></div>
+              <div class="panel-r"><span>Vector search</span><b>FAISS</b></div>
+              <div class="panel-r"><span>Graph</span><b>NetworkX</b></div>
+              <div class="panel-r"><span>Model API</span><b>OpenAI</b></div>
+              <div class="panel-r"><span>Accuracy</span><b class="hi">97% multi-hop</b></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="slot">
+        <article class="card">
+          <div class="c-top">
+            <div class="c-l">
+              <div class="c-n ramp">04</div>
               <div class="c-meta">
                 <span class="mono">Machine Learning · 2025</span>
                 <h3>House Price Prediction Model</h3>
